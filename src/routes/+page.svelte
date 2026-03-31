@@ -5,12 +5,14 @@
 <script>
     import Card from "../components/Card.svelte";
 
+    let { data } = $props();
+
 </script>
 
 <div class="flex flex-col pt-25 px-20">
 
     <h1 class="text-5xl font-extralight ">Bienvenido al blog👋</h1>
-    <h2 class="mt-3 text-2xl">¿Quién soy?</h2>
+    <!-- <h2 class="mt-3 text-2xl">¿Quién soy?</h2>
     <div class="mt-3 card bg-base-100 p-20">
 
         <div class="flex justify-center">
@@ -48,17 +50,21 @@
         <p>
             Gracias por tomarte el tiempo de visitar este espacio. Espero que el contenido te sea útil y que puedas aprender algo nuevo en cada artículo. 🚀
         </p>
-    </div>
+    </div> -->
     
     <h2 class="text-lg mt-5 font-medium">Todos los articulos del blog</h2>
 
     <div class="flex flex-wrap mt-3 gap-5 md:justify-center mb-5">
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        {#each data.posts as post}
+            <Card 
+                titulo={post.titulo}
+                descripcion={post.descripcion} 
+                fecha={post.fecha} 
+                img={post.imagen}
+                etiquetas={post.etiquetas}
+                path={post.ruta}
+            />
+        {/each}
     </div>
 
 </div>
