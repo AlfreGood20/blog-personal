@@ -1,37 +1,58 @@
 <script>
     let {
-        titulo="Crea tu primera api rest con java spring boot",
-        descripcion="Contruye una api rest por primera vez usando el framework spring.",
-        fecha="29 de marzo de 2026",
-        img="https://e4developer.com/wp-content/uploads/2018/01/spring-boot.png",
-        etiquetas = [
-            { tipo: "warning", titulo: "SQL" },    
-            { tipo: "info", titulo: "Base de datos" }, 
-            { tipo: "primary", titulo: "Fundamentos" }, 
-            { tipo: "success", titulo: "Spring" },
-            { tipo: "error", titulo: "Java" }
-        ]
-
+            titulo,
+            descripcion,
+            fecha,
+            img,
+            etiquetas,
+            path='#'
         } = $props();
 </script>
 
-<a href="#" class="cursor-pointer card bg-base-100 md:w-90 md:h-105 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-transform duration-200 ">
-    <figure>
-        <img src={img} alt={titulo} />
-    </figure>
+<a href={`/blog/${path}`} class="card cursor-pointer bg-base-100 md:w-90 md:h-105 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-transform duration-200 ">
+
+    {#if img != null}
+        <figure>
+            <img src={img} alt={titulo} />
+        </figure>
+    {:else}
+        <figure>
+            <div class="skeleton h-50 w-full rounded rounded-b-3xl"></div>
+        </figure>
+    {/if}
+
     <div class="card-body">
 
-        <div class="flex flex-wrap gap-4">
-            {#each etiquetas as etiqueta}
-                <div class={`badge badge-neutral badge-dash`}>{etiqueta.titulo}</div>
-            {/each}
+        <div class="flex flex-wrap justify-center gap-4">
+            {#if etiquetas == null}
+                {#each [1,2,3,4,5] as esqueleto}
+                    <div class="skeleton h-5 w-20"></div>
+                {/each}
+            {:else}
+                {#each etiquetas as etiqueta}
+                    <div class={`badge badge-neutral badge-dash`}>{etiqueta}</div>
+                {/each}
+            {/if}
         </div>
 
-        
-        <h1 class="card-title text-2xl hover:underline">{titulo}</h1>
-        <p>{descripcion}</p>
 
-        <div class="card-actions justify-start">
+        {#if titulo != null}
+            <h1 class="card-title text-2xl hover:underline">{titulo}</h1>
+        {:else}
+            <div class="mt-2 skeleton h-9 w-full"></div>
+        {/if}
+
+        {#if descripcion != null}
+            <p>{descripcion}</p>
+        {:else}
+            <div class="flex flex-col gap-2">
+                <div class="skeleton h-4 w-full"></div>
+                <div class="skeleton h-4 w-full"></div>
+                
+            </div>
+        {/if}
+
+        <div class="card-actions items-center">
             <div class="flex flex-row gap-2">
                 <p class="font-extrabold hover:underline">Leer ahora</p>
                 <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -39,7 +60,11 @@
                 </svg>
             </div>
 
-            <p class="text-end text-sm font-light ">{fecha}</p>
+            {#if fecha != null}
+                <p class="text-end text-sm font-light ">{fecha}</p>
+            {:else}
+                <p class="ml-20 text-end text-sm skeleton h-4  md:w-20"></p>
+            {/if}
         </div>
     </div>
 </a>
