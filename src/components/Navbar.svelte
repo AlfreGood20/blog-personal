@@ -6,8 +6,7 @@
     </div>
 
     <div class="flex justify-end  gap-8">
-        <a class="btn btn-dash ">Inicio</a>
-        <a class="btn btn-dash">Sobre mi</a>
+        <a href="/" class="btn btn-dash">Blog</a>
 
        <!--  <label class="swap swap-rotate">
             
