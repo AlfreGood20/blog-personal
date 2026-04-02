@@ -9,7 +9,7 @@
 
 <Navbar />
 
-<main class="bg-[#EFEAE6] h-auto ">
+<main class="h-auto">
     {@render children?.()}
 </main>
 

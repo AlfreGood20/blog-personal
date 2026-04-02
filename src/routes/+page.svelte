@@ -9,9 +9,9 @@
 
 </script>
 
-<div class="flex flex-col pt-25 px-20">
+<div class="flex flex-col pt-25 md:px-20 px-4">
 
-    <h1 class="text-5xl font-extralight ">Bienvenido al blog👋</h1>
+    <h1 class="text-4xl md:text-5xl font-extralight ">Bienvenido al blog👋</h1>
     <!-- <h2 class="mt-3 text-2xl">¿Quién soy?</h2>
     <div class="mt-3 card bg-base-100 p-20">
 
