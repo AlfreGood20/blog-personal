@@ -9,7 +9,19 @@
         } = $props();
 </script>
 
-<a href={`/blog/${path}`} class="card cursor-pointer bg-base-100 md:w-90 md:h-105 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-transform duration-200 ">
+<a href={`/blog/${path}`} 
+    class="
+        card 
+        cursor-pointer 
+        bg-base-100 
+        md:w-90 md:h-105
+        shadow-lg
+        hover:-translate-y-2 
+        hover:shadow-2xl 
+        transition-transform
+        active:-translate-y-5
+        duration-200 "
+    >
 
     {#if img != null}
         <figure>
