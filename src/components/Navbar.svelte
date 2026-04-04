@@ -1,31 +1,26 @@
-
-
-
 <div
 class=
-    "navbar
-    z-50 
-    mt-3
-    glass
+    "
+    z-50
+    mt-5
     rounded-4xl
-    fixed flex 
+    fixed 
+    flex 
     flex-row 
-    items-center 
-    justify-between"
+    items-center
+    "
 >
 
-    <div class="flex flex-row">
-        <img alt="logotipo"/>
-        <h1 class="text-start text-2xl font-extrabold">AlfyCodeer</h1>
+    <div class="w-40 h-auto flex ml-3">
+        <img alt="logotipo" src="/logotipo1.1.png" class="w-auto h-auto"/>
     </div>
 
     <div class="flex font-semibold px-7 text-lg">
-        <a class="flex gap-2 items-center rounded-box" href="/" title="ir a seccion de blog">
+        <a class="flex btn btn-ghost gap-1 items-center" href="/" title="ir a seccion de blog">
             <span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
                 </svg>
-
             </span> Blog
         </a>
 

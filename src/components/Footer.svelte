@@ -1,8 +1,10 @@
 <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-9 ">
   <aside>
-    <img alt="logotipo" />
+    <div class="w-full">
+        <img alt="logotipo" src="/logotipo1.1.png" class="w-30 h-20"/>
+    </div>
     <p>
-      AlfyCodeer
+        afyStack
       <br />
       Copyright © {new Date().getFullYear()} - Todos los derechos reservados
     </p>
