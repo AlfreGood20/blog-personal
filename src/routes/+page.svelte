@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>AlfyCodeer - blog</title>
+    <title>afyStack - blog</title>
 </svelte:head>
 
 <script>
@@ -52,14 +52,12 @@
         </p>
     </div> -->
     
-    <h2 class="text-lg mt-5 font-medium">Todos los articulos del blog</h2>
-
     <div class="flex flex-wrap mt-3 gap-5 md:justify-center mb-5">
         {#each data.posts as post}
             <Card 
                 titulo={post.titulo}
                 descripcion={post.descripcion} 
-                fecha={post.fecha} 
+                fecha={post.fecha}
                 img={post.imagen}
                 etiquetas={post.etiquetas}
                 path={post.ruta}
