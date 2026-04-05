@@ -2,20 +2,20 @@
 class=
     "
     z-50
-    mt-5
+    mt-3
     rounded-4xl
     fixed 
     flex 
-    flex-row 
+    flex-row
     items-center
     "
 >
 
-    <div class="w-40 h-auto flex ml-3">
+    <div class="w-40 h-auto ml-3">
         <img alt="logotipo" src="/logotipo1.1.png" class="w-auto h-auto"/>
     </div>
 
-    <div class="flex font-semibold px-7 text-lg">
+    <div class="font-semibold px-7 text-lg">
         <a class="flex btn btn-ghost gap-1 items-center" href="/" title="ir a seccion de blog">
             <span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">

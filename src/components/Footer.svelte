@@ -4,8 +4,6 @@
         <img alt="logotipo" src="/logotipo1.1.png" class="w-30 h-20"/>
     </div>
     <p>
-        afyStack
-      <br />
       Copyright © {new Date().getFullYear()} - Todos los derechos reservados
     </p>
   </aside>

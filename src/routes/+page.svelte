@@ -9,9 +9,9 @@
 
 </script>
 
-<div class="flex flex-col pt-25 md:px-20 px-4">
+<div class="flex flex-col md:pt-25 md:px-20 md:mb-10 pb-10 px-10 pt-30">
 
-    <h1 class="text-4xl md:text-5xl font-extralight ">Bienvenido al blog👋</h1>
+    <h1 class="text-center md:text-start text-4xl md:text-5xl font-extralight ">Bienvenido al blog👋</h1>
     <!-- <h2 class="mt-3 text-2xl">¿Quién soy?</h2>
     <div class="mt-3 card bg-base-100 p-20">
 
@@ -52,7 +52,7 @@
         </p>
     </div> -->
     
-    <div class="flex flex-wrap mt-3 gap-5 md:justify-center mb-5">
+    <div class="flex flex-wrap mt-5 gap-5 md:justify-center">
         {#each data.posts as post}
             <Card 
                 titulo={post.titulo}
