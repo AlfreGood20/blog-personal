@@ -1,11 +1,24 @@
 <svelte:head>
     <title>{titulo}</title>
+    <meta name="description" content={descripcion} />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={titulo} />
+    <meta property="og:description" content={descripcion}/>
+    <meta property="og:image" content={imagen} />
+    <meta property="og:url" content={$page.url.href} />
+    <meta property="og:site_name" content="afyStack" />
+
 </svelte:head>
 
 <script>
+    import { page } from "$app/stores";
+
     let {data} = $props();
 
     const titulo = data.titulo;
+    const descripcion = data.descripcion;
+    const imagen = data.imagen;
     const Post = data.contenido;
 </script>
 
