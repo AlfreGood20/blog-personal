@@ -25,7 +25,7 @@ etiquetas: ['git','github','programacion','tecnologias','control de versiones']
 
 # Git y GitHub
 
-<Information fecha='01 de abril de 2026', tiempoLectura='5 minutos'/>
+<Information fecha='01 de abril de 2026', tiempoLectura='8 minutos'/>
 <Imagen imagen={`${path}/gitandgithub.png`} nombre='git y github'/>
 
 Nosotros como desarrolladores tenemos la necesidad de tener versiones en muestro proyecto, entonces existe una tecnologia que nos facilitara a la hora de trabajar personalmente o colaborativamente.
@@ -65,7 +65,7 @@ $ git config --global user.email username@gmail.com
 
 Esta configuracion es sencilla pero esencial para su funcionamiento con github, remplaza la informacion ficticia con su informacion real. Nota: en el user.name debera de poner su user de github tal cual aparece por que luego eso puede causar conflicto en su funcionamiento.
 
-De nuevo, sólo necesitas hacer esto una vez si especificas la opción - -global, ya que Git siempre usará esta información para todo lo que hagas en ese sistema. Si quieres sobrescribir esta información con otro nombre o dirección de correo para proyectos específicos, puedes ejecutar el comando sin la opción - -global cuando estés en ese proyecto.
+De nuevo, sólo necesitas hacer esto una vez si especificas la opción `--global`, ya que Git siempre usará esta información para todo lo que hagas en ese sistema. Si quieres sobrescribir esta información con otro nombre o dirección de correo para proyectos específicos, puedes ejecutar el comando sin la opción `--global` cuando estés en ese proyecto.
 
 Para saber si se configuro bien la informacion ejecute estos comandos en su terminal de git bash:
 
@@ -81,7 +81,7 @@ Debera de aparecer su informacion que configuro.
 ```bash
 $ git init
 ```
-git init es el comando fundamental para iniciar un nuevo repositorio Git local en un directorio, creando una subcarpeta oculta .git que almacena el historial y metadatos del proyecto. Se utiliza para convertir una carpeta existente en un proyecto versionado o para empezar uno vacío desde cero.
+git init es el comando fundamental para iniciar un nuevo repositorio Git local en un directorio, creando una subcarpeta oculta `.git` que almacena el historial y metadatos del proyecto. Se utiliza para convertir una carpeta existente en un proyecto versionado o para empezar uno vacío desde cero.
 
 ```bash
 $ git remote add origin http://repositorio.git
@@ -103,7 +103,7 @@ Comando fundamental de Git que muestra el estado actual de tu directorio de trab
 ```bash
 $ git add archivo
 ```
-Prepara los cambios realizados en el directorio de trabajo para la siguiente confirmación (commit), agregándolos al área de preparación o «índice». Es el primer paso esencial en el flujo de trabajo de Git para guardar archivos nuevos o modificados, asegurando que solo los cambios necesarios se incluyan en la instantánea. 
+Prepara los cambios realizados en el directorio de trabajo para la siguiente confirmación (commit), agregándolos al área de preparación o `«índice»`. Es el primer paso esencial en el flujo de trabajo de Git para guardar archivos nuevos o modificados, asegurando que solo los cambios necesarios se incluyan en la instantánea. 
 
 ```bash
 $ git commit -m 'comentario'
